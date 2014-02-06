@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EBv2ViewController : UIViewController
+@interface EBv2ViewController : UIViewController <UITextFieldDelegate>
+
+@property (copy, nonatomic) NSString *zipCode;
+
 
 @end

@@ -21,6 +21,9 @@
 		8510B15018A3E7E800962AC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8510B13218A3E7E800962AC0 /* UIKit.framework */; };
 		8510B15818A3E7E800962AC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8510B15618A3E7E800962AC0 /* InfoPlist.strings */; };
 		8510B15A18A3E7E800962AC0 /* EBv2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8510B15918A3E7E800962AC0 /* EBv2Tests.m */; };
+		8510B16B18A40B8200962AC0 /* EBv2SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8510B16A18A40B8200962AC0 /* EBv2SecondView.m */; };
+		8510B1B318A4263600962AC0 /* DLPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8510B1B218A4263600962AC0 /* DLPieChart.m */; };
+		8510B1B518A42B3800962AC0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8510B1B418A42B3800962AC0 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		8510B15518A3E7E800962AC0 /* EBv2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EBv2Tests-Info.plist"; sourceTree = "<group>"; };
 		8510B15718A3E7E800962AC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8510B15918A3E7E800962AC0 /* EBv2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBv2Tests.m; sourceTree = "<group>"; };
+		8510B16918A40B8200962AC0 /* EBv2SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBv2SecondView.h; sourceTree = "<group>"; };
+		8510B16A18A40B8200962AC0 /* EBv2SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBv2SecondView.m; sourceTree = "<group>"; };
+		8510B1B118A4263600962AC0 /* DLPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLPieChart.h; sourceTree = "<group>"; };
+		8510B1B218A4263600962AC0 /* DLPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLPieChart.m; sourceTree = "<group>"; };
+		8510B1B418A42B3800962AC0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8510B1B518A42B3800962AC0 /* QuartzCore.framework in Frameworks */,
 				8510B13118A3E7E800962AC0 /* CoreGraphics.framework in Frameworks */,
 				8510B13318A3E7E800962AC0 /* UIKit.framework in Frameworks */,
 				8510B12F18A3E7E800962AC0 /* Foundation.framework in Frameworks */,
@@ -82,6 +91,8 @@
 		8510B12218A3E7E800962AC0 = {
 			isa = PBXGroup;
 			children = (
+				8510B1B418A42B3800962AC0 /* QuartzCore.framework */,
+				8510B1B018A4263600962AC0 /* Pie Chart Library */,
 				8510B13418A3E7E800962AC0 /* EBv2 */,
 				8510B15318A3E7E800962AC0 /* EBv2Tests */,
 				8510B12D18A3E7E800962AC0 /* Frameworks */,
@@ -112,8 +123,11 @@
 		8510B13418A3E7E800962AC0 /* EBv2 */ = {
 			isa = PBXGroup;
 			children = (
+				8510B1B618A43A5200962AC0 /* iPad */,
 				8510B13D18A3E7E800962AC0 /* EBv2AppDelegate.h */,
 				8510B13E18A3E7E800962AC0 /* EBv2AppDelegate.m */,
+				8510B16918A40B8200962AC0 /* EBv2SecondView.h */,
+				8510B16A18A40B8200962AC0 /* EBv2SecondView.m */,
 				8510B14018A3E7E800962AC0 /* Main.storyboard */,
 				8510B14318A3E7E800962AC0 /* EBv2ViewController.h */,
 				8510B14418A3E7E800962AC0 /* EBv2ViewController.m */,
@@ -150,6 +164,22 @@
 				8510B15618A3E7E800962AC0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8510B1B018A4263600962AC0 /* Pie Chart Library */ = {
+			isa = PBXGroup;
+			children = (
+				8510B1B118A4263600962AC0 /* DLPieChart.h */,
+				8510B1B218A4263600962AC0 /* DLPieChart.m */,
+			);
+			path = "Pie Chart Library";
+			sourceTree = "<group>";
+		};
+		8510B1B618A43A5200962AC0 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8510B14518A3E7E800962AC0 /* EBv2ViewController.m in Sources */,
+				8510B16B18A40B8200962AC0 /* EBv2SecondView.m in Sources */,
 				8510B13B18A3E7E800962AC0 /* main.m in Sources */,
+				8510B1B318A4263600962AC0 /* DLPieChart.m in Sources */,
 				8510B13F18A3E7E800962AC0 /* EBv2AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +414,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EBv2/EBv2-Prefix.pch";
 				INFOPLIST_FILE = "EBv2/EBv2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,7 +429,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EBv2/EBv2-Prefix.pch";
 				INFOPLIST_FILE = "EBv2/EBv2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +497,7 @@
 				8510B15F18A3E7E800962AC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8510B16018A3E7E800962AC0 /* Build configuration list for PBXNativeTarget "EBv2Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +506,7 @@
 				8510B16218A3E7E800962AC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
