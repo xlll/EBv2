@@ -17,12 +17,25 @@
 @end
 
 @implementation EBv2ViewController
+@synthesize pieChartView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+    NSMutableArray *dataArray = [[NSMutableArray alloc] init];
+    
+    for(int i=0; i<5; i++)
+    {
+        NSNumber *number = [NSNumber numberWithInt:(i+1)*15];
+        // add number to array;
+        [dataArray addObject:number];
+    }
+    
+    // call DLPieChart method
+    [self.pieChartView renderInLayer:self.pieChartView dataArray:dataArray];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

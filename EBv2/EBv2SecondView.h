@@ -10,11 +10,15 @@
 #import "DLPieChart.h"
 
 
-@interface EBv2SecondView : UIViewController{}
+@interface EBv2SecondView : UIViewController{
+    
+    IBOutlet UIButton *backButton;
+}
 
 - (IBAction)back:(id)sender;
+- (IBAction)showFig:(id)sender;
 
-@property (retain, nonatomic) IBOutlet DLPieChart *pieChartView;
+@property (nonatomic, retain) IBOutlet DLPieChart *pieChartView;
 
 
 @end

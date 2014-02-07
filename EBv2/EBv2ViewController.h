@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DLPieChart.h"
 
 @interface EBv2ViewController : UIViewController <UITextFieldDelegate>
 
 @property (copy, nonatomic) NSString *zipCode;
-
+@property (nonatomic, retain) IBOutlet DLPieChart *pieChartView;
 
 @end

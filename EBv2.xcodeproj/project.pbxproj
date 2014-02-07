@@ -24,6 +24,7 @@
 		8510B16B18A40B8200962AC0 /* EBv2SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8510B16A18A40B8200962AC0 /* EBv2SecondView.m */; };
 		8510B1B318A4263600962AC0 /* DLPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8510B1B218A4263600962AC0 /* DLPieChart.m */; };
 		8510B1B518A42B3800962AC0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8510B1B418A42B3800962AC0 /* QuartzCore.framework */; };
+		8568778618A57F6200F5257A /* EBv2ThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8568778518A57F6200F5257A /* EBv2ThirdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		8510B1B118A4263600962AC0 /* DLPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLPieChart.h; sourceTree = "<group>"; };
 		8510B1B218A4263600962AC0 /* DLPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLPieChart.m; sourceTree = "<group>"; };
 		8510B1B418A42B3800962AC0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8568778418A57F6200F5257A /* EBv2ThirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBv2ThirdView.h; sourceTree = "<group>"; };
+		8568778518A57F6200F5257A /* EBv2ThirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBv2ThirdView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				8510B14018A3E7E800962AC0 /* Main.storyboard */,
 				8510B14318A3E7E800962AC0 /* EBv2ViewController.h */,
 				8510B14418A3E7E800962AC0 /* EBv2ViewController.m */,
+				8568778418A57F6200F5257A /* EBv2ThirdView.h */,
+				8568778518A57F6200F5257A /* EBv2ThirdView.m */,
 				8510B14618A3E7E800962AC0 /* Images.xcassets */,
 				8510B13518A3E7E800962AC0 /* Supporting Files */,
 			);
@@ -285,6 +290,7 @@
 				8510B13B18A3E7E800962AC0 /* main.m in Sources */,
 				8510B1B318A4263600962AC0 /* DLPieChart.m in Sources */,
 				8510B13F18A3E7E800962AC0 /* EBv2AppDelegate.m in Sources */,
+				8568778618A57F6200F5257A /* EBv2ThirdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
